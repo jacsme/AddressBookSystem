@@ -1,0 +1,181 @@
+{
+	"id": "23f2e816-a480-b29e-89a0-236d94ccab80",
+	"name": "AddressBookURL",
+	"description": "",
+	"order": [
+		"a651b929-5dde-05ba-b290-86c9c4c228a7",
+		"5c267cfb-321d-3d94-925b-cf532a8edb3d",
+		"a8a8c00d-fcf8-2652-fdf5-ddb6854ef8d5",
+		"d8e229dc-6462-4732-d8aa-656f97c4b07b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1531408116100,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5c267cfb-321d-3d94-925b-cf532a8edb3d",
+			"headers": "//Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA\n//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/AddressBookSystem/v1/removecontact/Jack Lord/Hermoso/04218745165",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535816207689,
+			"name": "RemoveContact",
+			"description": "",
+			"collectionId": "23f2e816-a480-b29e-89a0-236d94ccab80",
+			"responses": []
+		},
+		{
+			"id": "a651b929-5dde-05ba-b290-86c9c4c228a7",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/AddressBookSystem/v1/addnewcontact",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535687253332,
+			"name": "CreateNewContact",
+			"description": "",
+			"collectionId": "23f2e816-a480-b29e-89a0-236d94ccab80",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\": \"Jack Lord\", \n\t\"lastName\": \"Hermoso\", \n\t\"contactDetails\": [{\"phoneNumbers\": \"04218745125\"}]\n}"
+		},
+		{
+			"id": "a8a8c00d-fcf8-2652-fdf5-ddb6854ef8d5",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/AddressBookSystem/v1/addressbookalllist",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535648312809,
+			"name": "PrintAllAddressBookList",
+			"description": "",
+			"collectionId": "23f2e816-a480-b29e-89a0-236d94ccab80",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "d8e229dc-6462-4732-d8aa-656f97c4b07b",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMjAxMzI3MywiaWF0IjoxNTMxNDA4NDczfQ.r-X_Rdyd3wDcUJZKbejOHEzwalqXpSHcOMTLFout29xOkprZ7F5iy0rYGeHx9ydAbaf6Ktx7jNZep3eabr3frA",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/AddressBookSystem/v1/addressbookuniquelist/Jack Lord/Hermoso",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535727507423,
+			"name": "PrintUniqueAddressBookList",
+			"description": "",
+			"collectionId": "23f2e816-a480-b29e-89a0-236d94ccab80",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}
