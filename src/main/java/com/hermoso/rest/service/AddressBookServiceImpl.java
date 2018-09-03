@@ -21,6 +21,12 @@ import com.hermoso.rest.model.ContactDetails;
 import com.hermoso.rest.model.StatusResponse;
 import com.hermoso.rest.model.UserDetails;
 
+/**
+ * This is the main logic of the system
+ * that handle the manipulation of data 
+ * @author Jack Lord Hermoso
+ *
+ */
 @Service
 public class AddressBookServiceImpl implements AddressBookService {
 
@@ -28,6 +34,9 @@ public class AddressBookServiceImpl implements AddressBookService {
 	@Qualifier("addressBookBO")
 	private AddressBookBO addressBookBusinessObject;
 	
+	/**
+	 * This is to add new contact in the list
+	 */
 	@Override
 	public StatusResponse addNewContact(UserDetails userDetails) {
 		StatusResponse statusReponse = new StatusResponse();
@@ -72,6 +81,12 @@ public class AddressBookServiceImpl implements AddressBookService {
 		return statusReponse;
 	}
 
+	/**
+	 * This is refactored method that handle the convertion of 
+	 * list to string builder
+	 * @param resultUserDetails
+	 * @return
+	 */
 	private StringBuilder convertContactDetails(List<UserDetails> resultUserDetails) {
 		StringBuilder existingPhoneNumbers = new StringBuilder();
 		List<ContactDetails> intList = resultUserDetails.get(0).getContactDetails();
@@ -80,7 +95,11 @@ public class AddressBookServiceImpl implements AddressBookService {
 		}
 		return existingPhoneNumbers;
 	}
-
+	
+	/**
+	 * This is to remove the existing contact 
+	 * in the list
+	 */
 	@Override
 	public StatusResponse removeContact(String firstName, String lastName, String phoneNumber) {
 		StatusResponse statusReponse = new StatusResponse();
@@ -114,12 +133,20 @@ public class AddressBookServiceImpl implements AddressBookService {
 		return statusReponse;
 	}
 
+	/**
+	 * This is a method that handle to generate 
+	 * a list of all the contact
+	 */
 	@Override
 	public List<UserDetails> printAllContacts() {
 		List<UserDetails> addressBookBO = addressBookBusinessObject.getInstance();
 		return addressBookBO;
 	}
 
+	/**
+	 * This is a method that handle the retrieval of
+	 * a partyicular contact
+	 */
 	@Override
 	public List<UserDetails> printUniqueSet(String firstName, String lastName) {
 		List<UserDetails> addressBookBO = addressBookBusinessObject.getInstance();

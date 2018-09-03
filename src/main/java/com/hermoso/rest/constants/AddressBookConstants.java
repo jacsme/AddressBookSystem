@@ -1,5 +1,11 @@
 package com.hermoso.rest.constants;
 
+/**
+ * These are the constant classes that
+ * are being used in the system
+ * @author Jack Lord Hermoso
+ *
+ */
 public class AddressBookConstants {
 	
 	public static final String ADD_CONTACTS_URI = "${add.contacts.uri}";

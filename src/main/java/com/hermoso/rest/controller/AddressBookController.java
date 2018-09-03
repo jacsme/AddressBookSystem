@@ -26,6 +26,12 @@ import com.hermoso.rest.model.StatusResponse;
 import com.hermoso.rest.model.UserDetails;
 import com.hermoso.rest.service.AddressBookService;
 
+/**
+ * This is the main controller of address book System
+ * that will handle all the request or user inputs
+ * @author Jack Lord Hermoso
+ *
+ */
 @RestController
 public class AddressBookController {
 	

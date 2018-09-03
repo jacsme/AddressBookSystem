@@ -5,7 +5,12 @@ import java.util.List;
 
 import com.hermoso.rest.model.UserDetails;
 
-
+/**
+ * This is a singleton class that handle the data structure
+ * of address book system
+ * @author Jack Lord Hermoso
+ *
+ */
 public class AddressBookBO {
 
 	private static class AddressBookLoader {
